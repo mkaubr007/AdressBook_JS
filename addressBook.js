@@ -116,3 +116,13 @@ contactArray.push(addressBookSystem2);
 let addressBookSystem3 = new AddressBookSystem("Sahil","Singh","pemula","Chennai","TamilNadu",564738,9566773333,"sh@gamil.com");
 contactArray.push(addressBookSystem3);
 console.log(contactArray)
+updateName()
+
+function updateName(){
+    let name = contactArray.filter(name => name.firstName == 'Manish');
+    if(name=='Manish')
+    console.log(name[0].firstName='Rohan');
+    else{
+        console.log("name not found");
+    }
+}
